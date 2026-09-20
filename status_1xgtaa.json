@@ -1,0 +1,1702 @@
+{
+  "strategy": "1xGTAA (defensiv, ungehebelt)",
+  "key": "1xgtaa",
+  "updated": "2026-09-20T20:27:28.801556+02:00",
+  "rebalance": "cooldown",
+  "rebalanceLabel": "Cooldown-Modell (taeglich, 10-Handelstage-Freeze)",
+  "ntfyMode": "change",
+  "notifyDays": [],
+  "asOf": "2026-09-18",
+  "needsRetry": false,
+  "changedToday": false,
+  "changeType": null,
+  "cooldown": 9,
+  "nextRebalance": null,
+  "allocation": [
+    {
+      "asset": "NASDAQ100",
+      "display": "Nasdaq 100",
+      "weight": 0.6,
+      "leverage": 1,
+      "product": "iShares Nasdaq 100 UCITS",
+      "isin": "IE00B53SZB19"
+    },
+    {
+      "asset": "COMMODITIES",
+      "display": "Rohstoffe (breit)",
+      "weight": 0.4,
+      "leverage": 1,
+      "product": "Invesco Bloomberg Commodity UCITS",
+      "isin": "IE00BD6FTQ80"
+    }
+  ],
+  "signals": {
+    "NASDAQ100": {
+      "momentum": 0.385757,
+      "trend": true,
+      "marginSMA": 0.06628
+    },
+    "EM_SMALLCAP": {
+      "momentum": 0.222198,
+      "trend": true,
+      "marginSMA": 0.022438
+    },
+    "EMU_VALUE": {
+      "momentum": 0.311858,
+      "trend": true,
+      "marginSMA": 0.042366
+    },
+    "BONDS_7_10": {
+      "momentum": -0.115197,
+      "trend": false,
+      "marginSMA": -0.026037
+    },
+    "GOLD": {
+      "momentum": -0.040177,
+      "trend": false,
+      "marginSMA": -0.030914
+    },
+    "COMMODITIES": {
+      "momentum": 0.911637,
+      "trend": true,
+      "marginSMA": 0.129811
+    },
+    "CASH_USD": {
+      "momentum": 0.056742,
+      "trend": true,
+      "marginSMA": 0.010518
+    }
+  },
+  "freshness": {
+    "NASDAQ100": {
+      "last": "2026-09-18",
+      "fresh": true
+    },
+    "EM_SMALLCAP": {
+      "last": "2026-09-18",
+      "fresh": true
+    },
+    "EMU_VALUE": {
+      "last": "2026-09-18",
+      "fresh": true
+    },
+    "BONDS_7_10": {
+      "last": "2026-09-18",
+      "fresh": true
+    },
+    "GOLD": {
+      "last": "2026-09-18",
+      "fresh": true
+    },
+    "COMMODITIES": {
+      "last": "2026-09-18",
+      "fresh": true
+    },
+    "CASH_USD": {
+      "last": "2026-09-18",
+      "fresh": true
+    }
+  },
+  "history": [
+    {
+      "date": "2025-02-14",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-02-18",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-02-19",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-02-20",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-02-21",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-02-24",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-02-25",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-02-26",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-02-27",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-02-28",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-03-03",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-03-04",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-03-05",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-03-06",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-03-07",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-03-10",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-03-11",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-03-12",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-03-13",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-03-14",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-03-17",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-03-18",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-03-19",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-03-20",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-03-21",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-03-24",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-03-25",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-03-26",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-03-27",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-03-28",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-03-31",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-04-01",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-04-02",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-04-03",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-04-04",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-04-07",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-04-08",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-04-09",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-04-10",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-04-11",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-04-14",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-04-15",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-04-16",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-04-17",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-04-21",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-04-22",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-04-23",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-04-24",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-04-25",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-04-28",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-04-29",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-04-30",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-05-01",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-05-02",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-05-05",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-05-06",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-05-07",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-05-08",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-05-09",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-05-12",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-05-13",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-05-14",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-05-15",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-05-16",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-05-19",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-05-20",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-05-21",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-05-22",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-05-23",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-05-27",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-05-28",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-05-29",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-05-30",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-06-02",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-06-03",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-06-04",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-06-05",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-06-06",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-06-09",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-06-10",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-06-11",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-06-12",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-06-13",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-06-16",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-06-17",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-06-18",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-06-20",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-06-23",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-06-24",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-06-25",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-06-26",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-06-27",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-06-30",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-07-01",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-07-02",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-07-03",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-07-07",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-07-08",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-07-09",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-07-10",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-07-11",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-07-14",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-07-15",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-07-16",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-07-17",
+      "allocation": "EMU_VALUE:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-07-18",
+      "allocation": "EMU_VALUE:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-07-21",
+      "allocation": "EMU_VALUE:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-07-22",
+      "allocation": "EMU_VALUE:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-07-23",
+      "allocation": "EMU_VALUE:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-07-24",
+      "allocation": "EMU_VALUE:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-07-25",
+      "allocation": "EMU_VALUE:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-07-28",
+      "allocation": "EMU_VALUE:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-07-29",
+      "allocation": "EMU_VALUE:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-07-30",
+      "allocation": "EMU_VALUE:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-07-31",
+      "allocation": "EMU_VALUE:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-08-01",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-08-04",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-08-05",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-08-06",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-08-07",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-08-08",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-08-11",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-08-12",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-08-13",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-08-14",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-08-15",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-08-18",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-08-19",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-08-20",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-08-21",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-08-22",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-08-25",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-08-26",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-08-27",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-08-28",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-08-29",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-09-02",
+      "allocation": "EMU_VALUE:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2025-09-03",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-09-04",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-09-05",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-09-08",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-09-09",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-09-10",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-09-11",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-09-12",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-09-15",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-09-16",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-09-17",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-09-18",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-09-19",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-09-22",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-09-23",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-09-24",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-09-25",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-09-26",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-09-29",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-09-30",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-10-01",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-10-02",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-10-03",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-10-06",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-10-07",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-10-08",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-10-09",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-10-10",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-10-13",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-10-14",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-10-15",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-10-16",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-10-17",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-10-20",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-10-21",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-10-22",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-10-23",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-10-24",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-10-27",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-10-28",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-10-29",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-10-30",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-10-31",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-11-03",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-11-04",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-11-05",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-11-06",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-11-07",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-11-10",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-11-11",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-11-12",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-11-13",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-11-14",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-11-17",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-11-18",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-11-19",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-11-20",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-11-21",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-11-24",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-11-25",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-11-26",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-11-28",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-12-01",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-12-02",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-12-03",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-12-04",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-12-05",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-12-08",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-12-09",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-12-10",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-12-11",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-12-12",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2025-12-15",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-12-16",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-12-17",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-12-18",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-12-19",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-12-22",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-12-23",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-12-24",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-12-26",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-12-29",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-12-30",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2025-12-31",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-01-02",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-01-05",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-01-06",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-01-07",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-01-08",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-01-09",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-01-12",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-01-13",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-01-14",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-01-15",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-01-16",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-01-20",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-01-21",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-01-22",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-01-23",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-01-26",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-01-27",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-01-28",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-01-29",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-01-30",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-02-02",
+      "allocation": "GOLD:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-02-03",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-02-04",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-02-05",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-02-06",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-02-09",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-02-10",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-02-11",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-02-12",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-02-13",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-02-17",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-02-18",
+      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-02-19",
+      "allocation": "EM_SMALLCAP:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-02-20",
+      "allocation": "EM_SMALLCAP:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-02-23",
+      "allocation": "EM_SMALLCAP:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-02-24",
+      "allocation": "EM_SMALLCAP:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-02-25",
+      "allocation": "EM_SMALLCAP:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-02-26",
+      "allocation": "EM_SMALLCAP:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-02-27",
+      "allocation": "EM_SMALLCAP:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-03-02",
+      "allocation": "EM_SMALLCAP:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-03-03",
+      "allocation": "EM_SMALLCAP:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-03-04",
+      "allocation": "EM_SMALLCAP:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-03-05",
+      "allocation": "EM_SMALLCAP:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-03-06",
+      "allocation": "COMMODITIES:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-03-09",
+      "allocation": "COMMODITIES:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-03-10",
+      "allocation": "COMMODITIES:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-03-11",
+      "allocation": "COMMODITIES:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-03-12",
+      "allocation": "COMMODITIES:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-03-13",
+      "allocation": "COMMODITIES:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-03-16",
+      "allocation": "COMMODITIES:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-03-17",
+      "allocation": "COMMODITIES:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-03-18",
+      "allocation": "COMMODITIES:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-03-19",
+      "allocation": "COMMODITIES:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-03-20",
+      "allocation": "COMMODITIES:0.6|GOLD:0.4"
+    },
+    {
+      "date": "2026-03-23",
+      "allocation": "COMMODITIES:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2026-03-24",
+      "allocation": "COMMODITIES:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2026-03-25",
+      "allocation": "COMMODITIES:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2026-03-26",
+      "allocation": "COMMODITIES:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2026-03-27",
+      "allocation": "COMMODITIES:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2026-03-30",
+      "allocation": "COMMODITIES:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2026-03-31",
+      "allocation": "COMMODITIES:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2026-04-01",
+      "allocation": "COMMODITIES:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2026-04-02",
+      "allocation": "COMMODITIES:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2026-04-06",
+      "allocation": "COMMODITIES:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2026-04-07",
+      "allocation": "COMMODITIES:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2026-04-08",
+      "allocation": "COMMODITIES:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2026-04-09",
+      "allocation": "COMMODITIES:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2026-04-10",
+      "allocation": "COMMODITIES:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2026-04-13",
+      "allocation": "COMMODITIES:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2026-04-14",
+      "allocation": "COMMODITIES:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2026-04-15",
+      "allocation": "COMMODITIES:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2026-04-16",
+      "allocation": "COMMODITIES:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2026-04-17",
+      "allocation": "COMMODITIES:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2026-04-20",
+      "allocation": "COMMODITIES:0.4|GOLD:0.6"
+    },
+    {
+      "date": "2026-04-21",
+      "allocation": "COMMODITIES:0.4|EMU_VALUE:0.6"
+    },
+    {
+      "date": "2026-04-22",
+      "allocation": "COMMODITIES:0.4|EMU_VALUE:0.6"
+    },
+    {
+      "date": "2026-04-23",
+      "allocation": "COMMODITIES:0.4|EMU_VALUE:0.6"
+    },
+    {
+      "date": "2026-04-24",
+      "allocation": "COMMODITIES:0.4|EMU_VALUE:0.6"
+    },
+    {
+      "date": "2026-04-27",
+      "allocation": "COMMODITIES:0.4|EMU_VALUE:0.6"
+    },
+    {
+      "date": "2026-04-28",
+      "allocation": "COMMODITIES:0.4|EMU_VALUE:0.6"
+    },
+    {
+      "date": "2026-04-29",
+      "allocation": "COMMODITIES:0.4|EMU_VALUE:0.6"
+    },
+    {
+      "date": "2026-04-30",
+      "allocation": "COMMODITIES:0.4|EMU_VALUE:0.6"
+    },
+    {
+      "date": "2026-05-01",
+      "allocation": "COMMODITIES:0.4|EMU_VALUE:0.6"
+    },
+    {
+      "date": "2026-05-04",
+      "allocation": "COMMODITIES:0.4|EMU_VALUE:0.6"
+    },
+    {
+      "date": "2026-05-05",
+      "allocation": "COMMODITIES:0.4|EMU_VALUE:0.6"
+    },
+    {
+      "date": "2026-05-06",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-05-07",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-05-08",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-05-11",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-05-12",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-05-13",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-05-14",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-05-15",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-05-18",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-05-19",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-05-20",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-05-21",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-05-22",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-05-26",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-05-27",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-05-28",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-05-29",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-06-01",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-06-02",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-06-03",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-06-04",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-06-05",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-06-08",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-06-09",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-06-10",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-06-11",
+      "allocation": "COMMODITIES:0.6|NASDAQ100:0.4"
+    },
+    {
+      "date": "2026-06-12",
+      "allocation": "COMMODITIES:0.6|NASDAQ100:0.4"
+    },
+    {
+      "date": "2026-06-15",
+      "allocation": "COMMODITIES:0.6|NASDAQ100:0.4"
+    },
+    {
+      "date": "2026-06-16",
+      "allocation": "COMMODITIES:0.6|NASDAQ100:0.4"
+    },
+    {
+      "date": "2026-06-17",
+      "allocation": "COMMODITIES:0.6|NASDAQ100:0.4"
+    },
+    {
+      "date": "2026-06-18",
+      "allocation": "COMMODITIES:0.6|NASDAQ100:0.4"
+    },
+    {
+      "date": "2026-06-22",
+      "allocation": "COMMODITIES:0.6|NASDAQ100:0.4"
+    },
+    {
+      "date": "2026-06-23",
+      "allocation": "COMMODITIES:0.6|NASDAQ100:0.4"
+    },
+    {
+      "date": "2026-06-24",
+      "allocation": "COMMODITIES:0.6|NASDAQ100:0.4"
+    },
+    {
+      "date": "2026-06-25",
+      "allocation": "COMMODITIES:0.6|NASDAQ100:0.4"
+    },
+    {
+      "date": "2026-06-26",
+      "allocation": "COMMODITIES:0.6|NASDAQ100:0.4"
+    },
+    {
+      "date": "2026-06-29",
+      "allocation": "EMU_VALUE:0.6|NASDAQ100:0.4"
+    },
+    {
+      "date": "2026-06-30",
+      "allocation": "EMU_VALUE:0.6|NASDAQ100:0.4"
+    },
+    {
+      "date": "2026-07-01",
+      "allocation": "EMU_VALUE:0.6|NASDAQ100:0.4"
+    },
+    {
+      "date": "2026-07-02",
+      "allocation": "EMU_VALUE:0.6|NASDAQ100:0.4"
+    },
+    {
+      "date": "2026-07-06",
+      "allocation": "EMU_VALUE:0.6|NASDAQ100:0.4"
+    },
+    {
+      "date": "2026-07-07",
+      "allocation": "EMU_VALUE:0.6|NASDAQ100:0.4"
+    },
+    {
+      "date": "2026-07-08",
+      "allocation": "EMU_VALUE:0.6|NASDAQ100:0.4"
+    },
+    {
+      "date": "2026-07-09",
+      "allocation": "EMU_VALUE:0.6|NASDAQ100:0.4"
+    },
+    {
+      "date": "2026-07-10",
+      "allocation": "EMU_VALUE:0.6|NASDAQ100:0.4"
+    },
+    {
+      "date": "2026-07-13",
+      "allocation": "EMU_VALUE:0.6|NASDAQ100:0.4"
+    },
+    {
+      "date": "2026-07-14",
+      "allocation": "EMU_VALUE:0.6|NASDAQ100:0.4"
+    },
+    {
+      "date": "2026-07-15",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-07-16",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-07-17",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-07-20",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-07-21",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-07-22",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-07-23",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-07-24",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-07-27",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-07-28",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-07-29",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-07-30",
+      "allocation": "COMMODITIES:0.4|EMU_VALUE:0.6"
+    },
+    {
+      "date": "2026-07-31",
+      "allocation": "COMMODITIES:0.4|EMU_VALUE:0.6"
+    },
+    {
+      "date": "2026-08-03",
+      "allocation": "COMMODITIES:0.4|EMU_VALUE:0.6"
+    },
+    {
+      "date": "2026-08-04",
+      "allocation": "COMMODITIES:0.4|EMU_VALUE:0.6"
+    },
+    {
+      "date": "2026-08-05",
+      "allocation": "COMMODITIES:0.4|EMU_VALUE:0.6"
+    },
+    {
+      "date": "2026-08-06",
+      "allocation": "COMMODITIES:0.4|EMU_VALUE:0.6"
+    },
+    {
+      "date": "2026-08-07",
+      "allocation": "COMMODITIES:0.4|EMU_VALUE:0.6"
+    },
+    {
+      "date": "2026-08-10",
+      "allocation": "COMMODITIES:0.4|EMU_VALUE:0.6"
+    },
+    {
+      "date": "2026-08-11",
+      "allocation": "COMMODITIES:0.4|EMU_VALUE:0.6"
+    },
+    {
+      "date": "2026-08-12",
+      "allocation": "COMMODITIES:0.4|EMU_VALUE:0.6"
+    },
+    {
+      "date": "2026-08-13",
+      "allocation": "COMMODITIES:0.4|EMU_VALUE:0.6"
+    },
+    {
+      "date": "2026-08-14",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-08-17",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-08-18",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-08-19",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-08-20",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-08-21",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-08-24",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-08-25",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-08-26",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-08-27",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-08-28",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-08-31",
+      "allocation": "COMMODITIES:0.4|EMU_VALUE:0.6"
+    },
+    {
+      "date": "2026-09-01",
+      "allocation": "COMMODITIES:0.4|EMU_VALUE:0.6"
+    },
+    {
+      "date": "2026-09-02",
+      "allocation": "COMMODITIES:0.4|EMU_VALUE:0.6"
+    },
+    {
+      "date": "2026-09-03",
+      "allocation": "COMMODITIES:0.4|EMU_VALUE:0.6"
+    },
+    {
+      "date": "2026-09-04",
+      "allocation": "COMMODITIES:0.4|EMU_VALUE:0.6"
+    },
+    {
+      "date": "2026-09-08",
+      "allocation": "COMMODITIES:0.4|EMU_VALUE:0.6"
+    },
+    {
+      "date": "2026-09-09",
+      "allocation": "COMMODITIES:0.4|EMU_VALUE:0.6"
+    },
+    {
+      "date": "2026-09-10",
+      "allocation": "COMMODITIES:0.4|EMU_VALUE:0.6"
+    },
+    {
+      "date": "2026-09-11",
+      "allocation": "COMMODITIES:0.4|EMU_VALUE:0.6"
+    },
+    {
+      "date": "2026-09-14",
+      "allocation": "COMMODITIES:0.4|EMU_VALUE:0.6"
+    },
+    {
+      "date": "2026-09-15",
+      "allocation": "COMMODITIES:0.4|EMU_VALUE:0.6"
+    },
+    {
+      "date": "2026-09-16",
+      "allocation": "COMMODITIES:0.4|EMU_VALUE:0.6"
+    },
+    {
+      "date": "2026-09-17",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    },
+    {
+      "date": "2026-09-18",
+      "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
+    }
+  ]
+}

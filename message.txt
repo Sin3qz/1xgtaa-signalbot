@@ -1,0 +1,20 @@
+📊 1xGTAA (defensiv, ungehebelt)
+📈 INVESTIERT:
+   • 60% Nasdaq 100 (1x) — iShares Nasdaq 100 UCITS
+   • 40% Rohstoffe (breit) (1x) — Invesco Bloomberg Commodity UCITS
+(9 Cooldown-Handelstage verbleibend)
+ℹ️ Kein neuer US-Handelstag seit 18.09. (Wochenende/Feiertag)
+
+Signale je Baustein (USD, 1x-Kurse):
+   • Rohstoffe (breit): Momentum +91.2%, Trend SMA8>SMA150 JA  ✅ gehalten
+   • Nasdaq 100: Momentum +38.6%, Trend SMA8>SMA150 JA  ✅ gehalten
+   • EMU Value: Momentum +31.2%, Trend SMA8>SMA150 JA  · qualifiziert
+   • EM Small Caps: Momentum +22.2%, Trend SMA8>SMA150 JA  · qualifiziert
+   • Cash / Geldmarkt: Momentum +5.7%, Trend SMA8>SMA150 JA  · qualifiziert
+   • Gold: Momentum -4.0%, Trend SMA8>SMA150 nein  · raus (Trend/Mom)
+   • US-Treasury 7-10y: Momentum -11.5%, Trend SMA8>SMA150 nein  · raus (Trend/Mom)
+
+Kursstand: 18.09.2026
+
+Signale auf zuverlaessigen USD-1x-Kursen (Yahoo); kein Xetra-Lag (B1).
+Rotationsstrategie, monatl.-aehnlicher Umschlag. KEINE ANLAGEBERATUNG.
