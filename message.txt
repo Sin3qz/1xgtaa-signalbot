@@ -1,0 +1,23 @@
+📊 1xGTAA (defensiv, ungehebelt)
+📈 Gehalten:
+   •  60%  Nasdaq 100 (1x)
+   •  40%  Rohstoffe (breit) (1x)
+(9 Cooldown-Handelstage verbleibend)
+ℹ️ Kein neuer US-Handelstag seit 18.09. (Wochenende/Feiertag)
+
+Signale je Baustein (USD, 1x-Kurse):
+```
+Baustein          Momentum   SMA8/150   Status
+Rohstoffe (breit) +91.2%     +13.9%     HALT 40%
+Nasdaq 100        +38.6%     +5.2%      HALT 60%
+EMU Value         +31.2%     +5.7%      qualifiziert
+EM Small Caps     +22.2%     +2.2%      qualifiziert
+Cash / Geldmarkt  +5.7%      +1.0%      qualifiziert
+Gold              -4.0%      -4.1%      raus (Trend/Mom)
+US-Treasury 7-10y -11.5%     -2.3%      raus (Trend/Mom)
+```
+
+Kursstand: 18.09.2026
+
+Signale auf zuverlaessigen USD-1x-Kursen (Yahoo); kein Xetra-Lag (B1).
+Rotationsstrategie, monatl.-aehnlicher Umschlag. KEINE ANLAGEBERATUNG.
