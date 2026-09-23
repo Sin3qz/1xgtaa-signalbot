@@ -1,13 +1,13 @@
 {
   "strategy": "1xGTAA (defensiv, ungehebelt)",
   "key": "1xgtaa",
-  "updated": "2026-09-22T12:02:57.728411+02:00",
+  "updated": "2026-09-23T13:03:10.906791+02:00",
   "rebalance": "cooldown",
   "rebalanceLabel": "Cooldown-Modell (taeglich, 10-Handelstage-Freeze)",
   "ntfyMode": "change",
   "notifyDays": [],
   "asOf": "2026-09-21",
-  "needsRetry": false,
+  "needsRetry": true,
   "changedToday": false,
   "changeType": null,
   "cooldown": 8,
@@ -48,10 +48,10 @@
       "leverage": 1
     },
     "EMU_VALUE": {
-      "momentum": 0.307348,
+      "momentum": 0.347186,
       "trend": true,
-      "marginSMA": 0.041846,
-      "rankValue": 0.054403,
+      "marginSMA": 0.051415,
+      "rankValue": 0.055539,
       "display": "EMU Value",
       "leverage": 1
     },
@@ -91,31 +91,31 @@
   "freshness": {
     "NASDAQ100": {
       "last": "2026-09-21",
-      "fresh": true
+      "fresh": false
     },
     "EM_SMALLCAP": {
       "last": "2026-09-21",
-      "fresh": true
+      "fresh": false
     },
     "EMU_VALUE": {
       "last": "2026-09-21",
-      "fresh": true
+      "fresh": false
     },
     "BONDS_7_10": {
       "last": "2026-09-21",
-      "fresh": true
+      "fresh": false
     },
     "GOLD": {
       "last": "2026-09-21",
-      "fresh": true
+      "fresh": false
     },
     "COMMODITIES": {
       "last": "2026-09-21",
-      "fresh": true
+      "fresh": false
     },
     "CASH_USD": {
       "last": "2026-09-21",
-      "fresh": true
+      "fresh": false
     }
   },
   "history": [

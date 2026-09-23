@@ -9,14 +9,16 @@ Signale je Baustein (USD, 1x-Kurse):
 Baustein          Momentum   SMA8/150   Status
 Rohstoffe (breit) +83.5%     +13.6%     HALT 40%
 Nasdaq 100        +56.9%     +5.6%      HALT 60%
+EMU Value         +34.7%     +5.6%      qualifiziert
 EM Small Caps     +32.5%     +2.0%      qualifiziert
-EMU Value         +30.7%     +5.4%      qualifiziert
 Cash / Geldmarkt  +5.7%      +1.0%      qualifiziert
 Gold              -4.3%      -4.1%      raus (Trend/Mom)
 US-Treasury 7-10y -8.3%      -2.4%      raus (Trend/Mom)
 ```
 
 Kursstand: 21.09.2026
+
+⚠️ Kursdaten evtl. veraltet — ein erwarteter US-Handelstag fehlt. Der Bot versucht es automatisch erneut; bitte pruefen, falls die Warnung bleibt.
 
 Signale auf zuverlaessigen USD-1x-Kursen (Yahoo); kein Xetra-Lag (B1).
 Rotationsstrategie, monatl.-aehnlicher Umschlag. KEINE ANLAGEBERATUNG.
