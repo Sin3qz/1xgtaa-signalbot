@@ -2,21 +2,21 @@
 📈 Gehalten:
    •  60%  Nasdaq 100 (1x)
    •  40%  Rohstoffe (breit) (1x)
-(6 Cooldown-Handelstage verbleibend)
+(5 Cooldown-Handelstage verbleibend)
 
 Signale je Baustein (USD, 1x-Kurse):
 ```
 Baustein          Momentum   SMA8/150   Status
-Rohstoffe (breit) +95.7%     +12.5%     HALT 40%
-Nasdaq 100        +57.3%     +6.5%      HALT 60%
-EMU Value         +30.4%     +5.0%      qualifiziert
-EM Small Caps     +27.4%     +1.9%      qualifiziert
-Cash / Geldmarkt  +5.7%      +1.0%      qualifiziert
-Gold              -4.9%      -4.0%      raus (Trend/Mom)
-US-Treasury 7-10y -13.2%     -2.4%      raus (Trend/Mom)
+Rohstoffe (breit) +98.2%     +12.3%     HALT 40%
+Nasdaq 100        +54.4%     +7.0%      HALT 60%
+EMU Value         +24.9%     +4.6%      qualifiziert
+EM Small Caps     +21.5%     +1.9%      qualifiziert
+Cash / Geldmarkt  +5.6%      +1.0%      qualifiziert
+Gold              -12.4%     -3.9%      raus (Trend/Mom)
+US-Treasury 7-10y -16.4%     -2.6%      raus (Trend/Mom)
 ```
 
-Kursstand: 23.09.2026
+Kursstand: 24.09.2026
 
 Signale auf zuverlaessigen USD-1x-Kursen (Yahoo); kein Xetra-Lag (B1).
 Rotationsstrategie, monatl.-aehnlicher Umschlag. KEINE ANLAGEBERATUNG.
