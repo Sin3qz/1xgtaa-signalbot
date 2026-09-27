@@ -1,7 +1,7 @@
 {
   "strategy": "1xGTAA (defensiv, ungehebelt)",
   "key": "1xgtaa",
-  "updated": "2026-09-26T11:56:04.739860+02:00",
+  "updated": "2026-09-27T12:35:48.870468+02:00",
   "rebalance": "cooldown",
   "rebalanceLabel": "Cooldown-Modell (taeglich, 10-Handelstage-Freeze)",
   "ntfyMode": "change",
@@ -48,10 +48,10 @@
       "leverage": 1
     },
     "EMU_VALUE": {
-      "momentum": 0.223459,
+      "momentum": 0.241525,
       "trend": true,
-      "marginSMA": 0.027708,
-      "rankValue": 0.042215,
+      "marginSMA": 0.032074,
+      "rankValue": 0.042734,
       "display": "EMU Value",
       "leverage": 1
     },

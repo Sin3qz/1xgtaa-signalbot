@@ -3,6 +3,7 @@
    •  60%  Nasdaq 100 (1x)
    •  40%  Rohstoffe (breit) (1x)
 (4 Cooldown-Handelstage verbleibend)
+ℹ️ Kein neuer US-Handelstag seit 25.09. (Wochenende/Feiertag)
 
 Signale je Baustein (USD, 1x-Kurse):
 ```
@@ -10,7 +11,7 @@ Baustein          Momentum   SMA8/150   Status
 Rohstoffe (breit) +88.5%     +11.6%     HALT 40%
 Nasdaq 100        +60.4%     +7.6%      HALT 60%
 EM Small Caps     +28.5%     +2.2%      qualifiziert
-EMU Value         +22.3%     +4.2%      qualifiziert
+EMU Value         +24.2%     +4.3%      qualifiziert
 Cash / Geldmarkt  +5.7%      +1.0%      qualifiziert
 Gold              -8.0%      -3.9%      raus (Trend/Mom)
 US-Treasury 7-10y -14.3%     -2.6%      raus (Trend/Mom)
