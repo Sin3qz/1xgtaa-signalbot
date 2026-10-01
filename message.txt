@@ -1,18 +1,18 @@
 📊 1xGTAA (defensiv, ungehebelt)
 •  60%  Nasdaq 100
 •  40%  Rohstoffe (breit)
-Cooldown: 2 Handelstage gesperrt
+Cooldown: 1 Handelstage gesperrt
 
-Signale (1x-USD, Stand 29.09.):
+Signale (1x-USD, Stand 30.09.):
 ```
 Asset     MoM  SMA Ziel
-Rohstoff +74% +11%  40%
-Nasdaq   +55%  +8%  60%
-EMU Val  +24%  +4%   ok
-EM Small +24%  +2%   ok
+Rohstoff +81% +10%  40%
+Nasdaq   +53%  +8%  60%
+EM Small +22%  +2%   ok
+EMU Val  +21%  +3%   ok
 Cash$     +6%  +1%   ok
 UST 7-10 -17%  -3%    –
-Gold     -18%  -4%    –
+Gold     -20%  -5%    –
 ```
 MoM = Summe 1/3/6/9 M · SMA = SMA8/SMA150
 ok = qualifiziert, – = raus
