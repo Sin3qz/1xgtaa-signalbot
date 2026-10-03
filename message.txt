@@ -3,16 +3,16 @@
 •  40%  Rohstoffe (breit)
 Cooldown: frei (Wechsel möglich)
 
-Signale (1x-USD, Stand 01.10.):
+Signale (1x-USD, Stand 02.10.):
 ```
 Asset     MoM  SMA Ziel
-Rohstoff +85% +10%  40%
-Nasdaq   +57%  +8%  60%
-EM Small +20%  +2%   ok
-EMU Val  +13%  +3%   ok
+Rohstoff +79% +10%  40%
+Nasdaq   +60%  +8%  60%
+EM Small +26%  +2%   ok
 Cash$     +6%  +1%   ok
-UST 7-10 -16%  -3%    –
-Gold     -19%  -5%    –
+EMU Val   +1%  +2%   ok
+UST 7-10 -17%  -3%    –
+Gold     -22%  -6%    –
 ```
 MoM = Summe 1/3/6/9 M · SMA = SMA8/SMA150
 ok = qualifiziert, – = raus
