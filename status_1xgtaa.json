@@ -2,7 +2,7 @@
   "strategy": "1xGTAA (defensiv, ungehebelt)",
   "name": "1xGTAA",
   "key": "1xgtaa",
-  "updated": "2026-10-03T12:27:47.885275+02:00",
+  "updated": "2026-10-04T13:09:31.123061+02:00",
   "rebalance": "cooldown",
   "rebalanceLabel": "Cooldown-Modell (taeglich, 10-Handelstage-Freeze)",
   "asOf": "2026-10-02",
@@ -49,9 +49,9 @@
       "leverage": 1
     },
     "EMU_VALUE": {
-      "momentum": 0.010259,
+      "momentum": -0.001306,
       "trend": true,
-      "rankValue": 0.017562,
+      "rankValue": 0.017225,
       "display": "EMU Value",
       "leverage": 1
     },
@@ -119,8 +119,8 @@
       ],
       [
         "EMU Val",
-        0.010259,
-        0.017562,
+        -0.001306,
+        0.017225,
         0.0
       ],
       [
@@ -759,7 +759,7 @@
       "fresh": true
     },
     "EMU_VALUE": {
-      "last": "2026-10-01",
+      "last": "2026-10-02",
       "fresh": true
     },
     "BONDS_7_10": {

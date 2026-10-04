@@ -2,6 +2,7 @@
 •  60%  Nasdaq 100
 •  40%  Rohstoffe (breit)
 Cooldown: frei (Wechsel möglich)
+ℹ️ Kein neuer US-Handelstag seit 02.10. (Wochenende/Feiertag)
 
 Signale (1x-USD, Stand 02.10.):
 ```
@@ -10,7 +11,7 @@ Rohstoff +79% +10%  40%
 Nasdaq   +60%  +8%  60%
 EM Small +26%  +2%   ok
 Cash$     +6%  +1%   ok
-EMU Val   +1%  +2%   ok
+EMU Val    0%  +2%    –
 UST 7-10 -17%  -3%    –
 Gold     -22%  -6%    –
 ```
