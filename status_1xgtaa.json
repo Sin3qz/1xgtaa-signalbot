@@ -2,7 +2,7 @@
   "strategy": "1xGTAA (defensiv, ungehebelt)",
   "name": "1xGTAA",
   "key": "1xgtaa",
-  "updated": "2026-10-18T11:41:42.390172+02:00",
+  "updated": "2026-10-19T12:52:31.081746+02:00",
   "rebalance": "cooldown",
   "rebalanceLabel": "Cooldown-Modell (taeglich, 10-Handelstage-Freeze)",
   "asOf": "2026-10-16",
@@ -779,7 +779,7 @@
       "fresh": true
     },
     "EURUSD=X": {
-      "last": "2026-10-17",
+      "last": "2026-10-16",
       "fresh": true
     }
   },
