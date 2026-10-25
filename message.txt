@@ -2,6 +2,7 @@
 •  60%  Nasdaq 100
 •  40%  Rohstoffe (breit)
 Cooldown: frei (Wechsel möglich)
+ℹ️ Kein neuer US-Handelstag seit 23.10. (Wochenende/Feiertag)
 
 Signale (1x-USD, Stand 23.10.):
 ```
