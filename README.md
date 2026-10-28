@@ -6,7 +6,9 @@ Bugfixes B1–B12/F1–F4 uebernommen. Der Strategie-Kern ist unabhaengig gegen 
 verifizierten v6-Backtest geprueft (0 Abweichung auf 5517 Handelstagen).
 
 ## Strategie
-7 Bausteine, Top-2 nach Momentum, **40/60-Tilt** (Platz-2-UEbergewicht). Trend **SMA8 > SMA150**, Momentum = Summe 1/3/6/9-M. Verifiziert: CAGR 16,0 / Sortino 1,25 / MaxDD −18,2.
+7 Bausteine, Top-2 nach Momentum, **40/60-Tilt** (Platz-2-UEbergewicht). Trend **SMA8 > SMA150**, Momentum = Summe **1/3/6/12-M** (seit 28.10.2026, vorher 1/3/6/9). Verifiziert (1/3/6/9): CAGR 16,0 / Sortino 1,25 / MaxDD −18,2. Studie ab 07/2009 (täglich, Cooldown 10, 16 SMA-Kombinationen): 1/3/6/12 Median 14,9 % CAGR / −17,1 % MaxDD statt 13,3 % / −20,8 %; besser 2015–2020 und 2021–2026 in allen Kombinationen, 2009–2014 knapp schlechter.
+
+**Produkte (28.10.2026):** Rohstoffe = WisdomTree Enhanced Commodity USD Acc (IE00BYMLZY74, Xetra WTIC) — einen UCITS-ETF auf den DBC-Index (DBIQ Optimum Yield) gibt es nicht mehr; WisdomTree rollt ähnlich optimiert und lag seit 2017 in EUR 1,3 Pp p. a. näher an DBC als der Bloomberg-ETF. Cash = Xtrackers II USD Overnight Rate Swap 1C (LU0321465469, Xetra XFFE): bildet BIL in EUR nahezu 1:1 ab (Jahresabweichung ≤ 1 Pp); der EUR-Geldmarkt (Xeon) wich wegen des Dollarkurses bis ±13 Pp im Jahr ab.
 
 - **Signale:** ausschliesslich auf zuverlaessigen **USD-1x-Kursen** (Yahoo), Entscheidung
   von gestern wirkt heute (`.shift(1)`, kein Look-Ahead). Momentum-Fenster = 21/42/63/126/189 Handelstage.

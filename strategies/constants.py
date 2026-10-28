@@ -2,7 +2,7 @@
 #  1xGTAA — defensiv, ungehebelt (7 Bausteine).  Cooldown-Modell (taegliche
 #  Entscheidung, 10-Handelstage-Freeze), Top-2 nach Momentum, 40/60-Tilt (P2-UEG).
 #  Cash-Fallback per Slot (Dual-Momentum): 40/0 o. 0/60, sonst Cash (strikt).
-#  Trend SMA8 > SMA150. Momentum = Summe 1/3/6/9-Monats-Returns. Kein Look-Ahead.
+#  Trend SMA8 > SMA150. Momentum = Summe 1/3/6/12-Monats-Returns (ab 28.10.2026; vorher 1/3/6/9). Kein Look-Ahead.
 #  Verifiziert (v6-Engine, SMA8/150, 40/60, Slot-Cash-Fallback): CAGR 16.0 / Sortino 1.25 / MaxDD -18.2.
 #  Single Source of Truth (B4/B11): Anzeigen leiten sich aus diesen Werten ab.
 # ============================================================================
@@ -30,12 +30,14 @@ ASSETS = {
  "GOLD":        dict(ticker="GLD",  leverage=1, display="Gold",
                      product="Xetra-Gold (Alt.: iShares Physical Gold)", isin="DE000A0S9GB0"),
  "COMMODITIES": dict(ticker="DBC",  leverage=1, display="Rohstoffe (breit)",
-                     product="Invesco Bloomberg Commodity UCITS", isin="IE00BD6FTQ80"),
+                     product="WisdomTree Enhanced Commodity UCITS USD Acc (Xetra WTIC; Roll-Optimierung wie DBC)",
+                     isin="IE00BYMLZY74"),
  "CASH_USD":    dict(ticker="BIL",  leverage=1, display="Cash / Geldmarkt",
-                     product="Xtrackers EUR Overnight Rate (Xeon)", isin="LU0290358497"),
+                     product="Xtrackers II USD Overnight Rate Swap 1C (Xetra XFFE; USD-Geldmarkt wie BIL)",
+                     isin="LU0321465469"),
 }
 CFG = dict(mode="gtaa", rebalance="cooldown", cooldown_days=10,
-           S=8, L=150, N=2, lookbacks=(1,3,6,9), trend_mode="smax",
+           S=8, L=150, N=2, lookbacks=(1,3,6,12), trend_mode="smax",
            weights=[0.4, 0.6], fallback="slotgate", try_count=3)   # 40/60, Cash-Fallback 40/0 o. 0/60
 
 # Datenpruefung: Mindestanzahl Kurse je Signalreihe (Strategie braucht SMA/Momentum-Fenster + Reserve). Beginnt eine Reihe
