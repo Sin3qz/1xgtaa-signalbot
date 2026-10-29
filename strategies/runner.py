@@ -187,6 +187,20 @@ def run_strategy(closes=None, raw=None, write_files=True):
         freshness[fx] = {"last": last, "fresh": bool(f)}
         warns += w
     stale = not all(f["fresh"] for f in freshness.values())
+    # Xetra-Reihe (EMU Value) zaehlt mit bis zu 4 Tagen Alter als frisch. Fehlt aber der Schluss des erwarteten Tages,
+    # obwohl Xetra an dem Tag gehandelt hat (Yahoo liefert Xetra-Kurse teils spaeter), rechnet ein spaeterer Lauf nach:
+    # refreshLater -> naechster Sicherheitslauf bzw. Zeitgeber startet erneut (Allokation bleibt bis dahin gueltig).
+    refresh_later = False
+    try:
+        import pandas_market_calendars as mcal
+        xetra_open = len(mcal.get_calendar("XETR").schedule(start_date=exp, end_date=exp)) > 0
+    except Exception:
+        xetra_open = pd.Timestamp(exp).dayofweek < 5
+    for a in ASSET_LIST:
+        last = freshness[a]["last"]
+        if ASSETS[a].get("fx") and last and pd.Timestamp(last).date() < pd.Timestamp(exp).date() and xetra_open:
+            refresh_later = True
+            warns.append(f"{SHORT.get(a, a)}: Xetra-Schluss {U.de(exp)} noch nicht bei Yahoo (letzter {U.de(last)}) – späterer Lauf rechnet nach")
     warns = sorted(set(warns))
 
     idx, allocs, cds, ind, rebound = B.compute_series(closes, CFG, live=True)
@@ -230,7 +244,7 @@ def run_strategy(closes=None, raw=None, write_files=True):
         "strategy": STRAT_NAME, "name": "1xGTAA", "key": STRAT_KEY,
         "updated": pd.Timestamp.now(tz=U.TZ).isoformat(),
         "rebalance": CFG["rebalance"], "rebalanceLabel": REBALANCE_LABEL,
-        "asOf": idx[i].date().isoformat(), "needsRetry": bool(stale), "dataWarnings": warns,
+        "asOf": idx[i].date().isoformat(), "needsRetry": bool(stale), "refreshLater": bool(refresh_later), "dataWarnings": warns,
         "changedToday": signal is not None, "changeType": signal, "cooldown": int(cds[-1]), "late": bool(late),
         "pendingTrade": pending.isoformat() if pending else None,
         "since": change_date.isoformat(), "nextRebalance": None,

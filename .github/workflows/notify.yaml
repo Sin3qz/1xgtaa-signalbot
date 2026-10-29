@@ -50,7 +50,9 @@ jobs:
                   st = json.load(open(f, encoding="utf-8"))
                   upd = datetime.datetime.fromisoformat(st.get("updated", "1970-01-01T00:00:00+00:00"))
                   today = datetime.datetime.now(ZoneInfo("Europe/Berlin")).date()
-                  skip = upd.astimezone(ZoneInfo("Europe/Berlin")).date() == today and not st.get("needsRetry")
+                  # refreshLater: ein Xetra-Kurs (EMU Value) fehlte beim letzten Lauf noch -> nachrechnen
+                  skip = (upd.astimezone(ZoneInfo("Europe/Berlin")).date() == today and not st.get("needsRetry")
+                          and not st.get("refreshLater"))
               except Exception:
                   skip = False
           print(f"skip={'true' if skip else 'false'}")
