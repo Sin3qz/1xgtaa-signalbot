@@ -44,7 +44,30 @@ def commit_notify_state():
 #  DATEN (unveraendert zur verifizierten Version)
 # ==========================================================================
 def _fetch(ticker):
-    return U.fetch_close(ticker, CFG.get("try_count", 3))
+    s = U.fetch_close(ticker, CFG.get("try_count", 3))
+    if any(m.get("fx") and m["ticker"] == ticker for m in ASSETS.values()):   # Xetra-Reihe (EMU Value)
+        s = _quote_fill(ticker, s)
+    return s
+
+
+def _quote_fill(ticker, s):
+    """Yahoo liefert den Xetra-Tagesschluss (AW1T.DE) in der Historie erst am Folgetag gegen 10 Uhr UTC; die
+    Kursabfrage (quote) hat den Schlusskurs schon kurz nach Handelsschluss (identisch mit dem spaeteren Tagesschluss).
+    Fehlt der Tag in der Historie, ihn von dort ergaenzen – nur bei geschlossenem Markt, fuer einen Tag nach dem
+    letzten Historien-Tag und hoechstens bis gestern (Berlin; wie fetch_close)."""
+    try:
+        import yahooquery as yq
+        q = (yq.Ticker(ticker).price or {}).get(ticker) or {}
+        if not isinstance(q, dict) or q.get("marketState") == "REGULAR":
+            return s
+        px, t = float(q.get("regularMarketPrice") or 0), q.get("regularMarketTime")
+        d = pd.Timestamp(str(t)[:10]) if t else None
+        if px > 0 and d is not None and len(s) and d > s.index[-1] and d.date() <= U.berlin_yesterday() and d.dayofweek < 5:
+            print(f"{ticker}: Tagesschluss {d.date()} aus der Kursabfrage ergänzt ({px})")
+            s = pd.concat([s, pd.Series([px], index=[d])]).sort_index()
+    except Exception as e:
+        print(f"{ticker}: Kursabfrage nicht möglich ({e}) – Historie unverändert")
+    return s
 
 
 GRID_START = "1999-01-04"
