@@ -159,6 +159,9 @@ def _messages(c):
     elif c["pending"]:
         L += [f"⏳ Wechsel erkannt (Signal: Schluss {U.de(c['change_date'])}) — handeln am {U.de(c['pending'])}; "
               f"ntfy kommt an diesem Handelstag.", ""]
+        if c.get("prelim"):
+            L += ["⚠️ VORLÄUFIG: der Xetra-Schluss von EMU Value fehlt noch – ein späterer Lauf rechnet nach; "
+                  "die ntfy-Meldung kommt erst mit vollständigen Kursen.", ""]
     L += [f"📊 {STRAT_NAME}"] + _alloc_lines(c["alloc"])
     L += [f"Cooldown: {c['cd']} Handelstage gesperrt" if c["cd"] > 0 else "Cooldown: frei (Wechsel möglich)"]
     if c["no_new_day"]:
@@ -248,7 +251,8 @@ def run_strategy(closes=None, raw=None, write_files=True):
             if write_files:
                 U.save_json(NOTIFY_FILE, state)
     if state["lastSignature"] != cur and not stale:
-        if U.ntfy_allowed(today) and today >= trade_c:
+        # Fehlt der Xetra-Schluss (EMU Value), ist der Wechsel vorlaeufig: erst nach dem Nachrechnen melden
+        if U.ntfy_allowed(today) and today >= trade_c and not refresh_later:
             signal = _change_type(state["lastSignature"], cur)
             late = today > trade_c
             state.update(lastSignature=cur, since=change_date.isoformat(), sentOn=today.isoformat())
@@ -257,7 +261,7 @@ def run_strategy(closes=None, raw=None, write_files=True):
             pending = trade_c if (trade_c and trade_c >= today) else U.next_session_after(today)
 
     ctx = dict(signal=signal, alloc=allocs[-1], cd=int(cds[-1]), ind=ind, i=i, asof=idx[i].date(),
-               change_date=change_date, trade=trade_c, late=late, today=today, pending=pending, stale=stale, warns=warns,
+               change_date=change_date, trade=trade_c, late=late, today=today, pending=pending, stale=stale, warns=warns, prelim=refresh_later,
                no_new_day=(not stale) and idx[i].date() < U.berlin_yesterday())
     ntfy_text, disc_text = _messages(ctx)
 
