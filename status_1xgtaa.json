@@ -2,15 +2,13 @@
   "strategy": "1xGTAA (defensiv, ungehebelt)",
   "name": "1xGTAA",
   "key": "1xgtaa",
-  "updated": "2026-10-31T09:31:16.637274+01:00",
+  "updated": "2026-10-31T11:01:24.087477+01:00",
   "rebalance": "cooldown",
   "rebalanceLabel": "Cooldown-Modell (taeglich, 10-Handelstage-Freeze)",
   "asOf": "2026-10-30",
   "needsRetry": false,
-  "refreshLater": true,
-  "dataWarnings": [
-    "EMU Val: Xetra-Schluss 30.10.2026 noch nicht bei Yahoo (letzter 29.10.2026) – späterer Lauf rechnet nach"
-  ],
+  "refreshLater": false,
+  "dataWarnings": [],
   "changedToday": false,
   "changeType": null,
   "cooldown": 10,
@@ -44,9 +42,9 @@
       "leverage": 1
     },
     "EMU_VALUE": {
-      "momentum": 0.085056,
+      "momentum": 0.078142,
       "trend": false,
-      "rankValue": -0.021893,
+      "rankValue": -0.02209,
       "display": "EMU Value",
       "leverage": 1
     },
@@ -96,8 +94,8 @@
       ],
       [
         "EMU Val",
-        0.085056,
-        -0.021893,
+        0.078142,
+        -0.02209,
         0.0
       ],
       [
@@ -754,7 +752,7 @@
       "fresh": true
     },
     "EMU_VALUE": {
-      "last": "2026-10-29",
+      "last": "2026-10-30",
       "fresh": true
     },
     "BONDS_7_10": {
