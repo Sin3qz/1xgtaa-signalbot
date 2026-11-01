@@ -4,6 +4,7 @@
 •  40%  Rohstoffe (breit)
 •  60%  Cash (Fallback)
 Cooldown: 10 Handelstage gesperrt
+ℹ️ Kein neuer US-Handelstag seit 30.10. (Wochenende/Feiertag)
 
 Signale (1x-USD, Stand 30.10.):
 ```

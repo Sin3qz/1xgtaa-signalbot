@@ -2,7 +2,7 @@
   "strategy": "1xGTAA (defensiv, ungehebelt)",
   "name": "1xGTAA",
   "key": "1xgtaa",
-  "updated": "2026-10-31T11:01:24.087477+01:00",
+  "updated": "2026-11-01T12:53:34.453547+01:00",
   "rebalance": "cooldown",
   "rebalanceLabel": "Cooldown-Modell (taeglich, 10-Handelstage-Freeze)",
   "asOf": "2026-10-30",
