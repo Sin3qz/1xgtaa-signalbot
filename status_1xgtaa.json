@@ -2,16 +2,16 @@
   "strategy": "1xGTAA (defensiv, ungehebelt)",
   "name": "1xGTAA",
   "key": "1xgtaa",
-  "updated": "2026-11-03T00:07:05.459714+01:00",
+  "updated": "2026-11-04T00:42:07.964355+01:00",
   "rebalance": "cooldown",
   "rebalanceLabel": "Cooldown-Modell (taeglich, 10-Handelstage-Freeze)",
-  "asOf": "2026-11-02",
+  "asOf": "2026-11-03",
   "needsRetry": false,
   "refreshLater": false,
   "dataWarnings": [],
   "changedToday": true,
   "changeType": "SWITCH",
-  "cooldown": 9,
+  "cooldown": 8,
   "late": true,
   "pendingTrade": null,
   "since": "2026-10-30",
@@ -28,51 +28,51 @@
   ],
   "signals": {
     "NASDAQ100": {
-      "momentum": -0.042066,
-      "trend": true,
-      "rankValue": 0.004296,
+      "momentum": -0.035418,
+      "trend": false,
+      "rankValue": -0.000147,
       "display": "Nasdaq 100",
       "leverage": 1
     },
     "EM_SMALLCAP": {
-      "momentum": -0.214445,
+      "momentum": -0.295319,
       "trend": false,
-      "rankValue": -0.055187,
+      "rankValue": -0.061079,
       "display": "EM Small Caps",
       "leverage": 1
     },
     "EMU_VALUE": {
-      "momentum": 0.141551,
+      "momentum": 0.125398,
       "trend": false,
-      "rankValue": -0.022074,
+      "rankValue": -0.020829,
       "display": "EMU Value",
       "leverage": 1
     },
     "BONDS_7_10": {
-      "momentum": -0.015275,
+      "momentum": -0.031078,
       "trend": false,
-      "rankValue": -0.009445,
+      "rankValue": -0.009353,
       "display": "US-Treasury 7-10y",
       "leverage": 1
     },
     "GOLD": {
-      "momentum": -0.232931,
+      "momentum": -0.296577,
       "trend": false,
-      "rankValue": -0.07941,
+      "rankValue": -0.081373,
       "display": "Gold",
       "leverage": 1
     },
     "COMMODITIES": {
-      "momentum": 0.656982,
+      "momentum": 0.645883,
       "trend": true,
-      "rankValue": 0.103217,
+      "rankValue": 0.097737,
       "display": "Rohstoffe (breit)",
       "leverage": 1
     },
     "CASH_USD": {
-      "momentum": 0.05399,
+      "momentum": 0.053877,
       "trend": true,
-      "rankValue": 0.0098,
+      "rankValue": 0.00943,
       "display": "Cash / Geldmarkt",
       "leverage": 1
     }
@@ -88,44 +88,44 @@
     "rows": [
       [
         "Rohstoff",
-        0.656982,
-        0.103217,
+        0.645883,
+        0.097737,
         0.4
       ],
       [
         "EMU Val",
-        0.141551,
-        -0.022074,
+        0.125398,
+        -0.020829,
         0.0
       ],
       [
         "Cash$",
-        0.05399,
-        0.0098,
+        0.053877,
+        0.00943,
         0.0
       ],
       [
         "UST 7-10",
-        -0.015275,
-        -0.009445,
+        -0.031078,
+        -0.009353,
         0.0
       ],
       [
         "Nasdaq",
-        -0.042066,
-        0.004296,
+        -0.035418,
+        -0.000147,
         0.0
       ],
       [
         "EM Small",
-        -0.214445,
-        -0.055187,
+        -0.295319,
+        -0.061079,
         0.0
       ],
       [
         "Gold",
-        -0.232931,
-        -0.07941,
+        -0.296577,
+        -0.081373,
         0.0
       ]
     ],
@@ -140,11 +140,6 @@
     "span": "letzte 120 Handelstage (tägliche Entscheidung)",
     "what": "welches gehaltene Asset auf Platz 1 lag (höchstes Momentum)",
     "items": [
-      {
-        "date": "2026-05-13",
-        "lead": "COMMODITIES",
-        "allocation": "COMMODITIES:0.4|NASDAQ100:0.6"
-      },
       {
         "date": "2026-05-14",
         "lead": "COMMODITIES",
@@ -739,40 +734,45 @@
         "date": "2026-11-02",
         "lead": "COMMODITIES",
         "allocation": "COMMODITIES:0.4"
+      },
+      {
+        "date": "2026-11-03",
+        "lead": "COMMODITIES",
+        "allocation": "COMMODITIES:0.4"
       }
     ]
   },
   "freshness": {
     "NASDAQ100": {
-      "last": "2026-11-02",
+      "last": "2026-11-03",
       "fresh": true
     },
     "EM_SMALLCAP": {
-      "last": "2026-11-02",
+      "last": "2026-11-03",
       "fresh": true
     },
     "EMU_VALUE": {
-      "last": "2026-11-02",
+      "last": "2026-11-03",
       "fresh": true
     },
     "BONDS_7_10": {
-      "last": "2026-11-02",
+      "last": "2026-11-03",
       "fresh": true
     },
     "GOLD": {
-      "last": "2026-11-02",
+      "last": "2026-11-03",
       "fresh": true
     },
     "COMMODITIES": {
-      "last": "2026-11-02",
+      "last": "2026-11-03",
       "fresh": true
     },
     "CASH_USD": {
-      "last": "2026-11-02",
+      "last": "2026-11-03",
       "fresh": true
     },
     "EURUSD=X": {
-      "last": "2026-11-02",
+      "last": "2026-11-03",
       "fresh": true
     }
   },
@@ -787,10 +787,6 @@
     "EURUSD=X": "2003-12-01"
   },
   "history": [
-    {
-      "date": "2025-04-01",
-      "allocation": "EMU_VALUE:0.6|GOLD:0.4"
-    },
     {
       "date": "2025-04-02",
       "allocation": "EMU_VALUE:0.6|GOLD:0.4"
@@ -2385,6 +2381,10 @@
     },
     {
       "date": "2026-11-02",
+      "allocation": "COMMODITIES:0.4"
+    },
+    {
+      "date": "2026-11-03",
       "allocation": "COMMODITIES:0.4"
     }
   ]
