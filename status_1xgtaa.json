@@ -2,7 +2,7 @@
   "strategy": "1xGTAA (defensiv, ungehebelt)",
   "name": "1xGTAA",
   "key": "1xgtaa",
-  "updated": "2026-11-07T00:30:51.037392+01:00",
+  "updated": "2026-11-08T12:59:01.946511+01:00",
   "rebalance": "cooldown",
   "rebalanceLabel": "Cooldown-Modell (taeglich, 10-Handelstage-Freeze)",
   "asOf": "2026-11-06",
@@ -35,23 +35,23 @@
       "leverage": 1
     },
     "EM_SMALLCAP": {
-      "momentum": -0.389129,
+      "momentum": -0.389026,
       "trend": false,
-      "rankValue": -0.07848,
+      "rankValue": -0.078477,
       "display": "EM Small Caps",
       "leverage": 1
     },
     "EMU_VALUE": {
-      "momentum": 0.204094,
+      "momentum": 0.236146,
       "trend": false,
-      "rankValue": -0.007654,
+      "rankValue": -0.006752,
       "display": "EMU Value",
       "leverage": 1
     },
     "BONDS_7_10": {
-      "momentum": -0.011576,
+      "momentum": -0.001361,
       "trend": false,
-      "rankValue": -0.008862,
+      "rankValue": -0.006048,
       "display": "US-Treasury 7-10y",
       "leverage": 1
     },
@@ -70,9 +70,9 @@
       "leverage": 1
     },
     "CASH_USD": {
-      "momentum": 0.045302,
+      "momentum": 0.054067,
       "trend": true,
-      "rankValue": 0.005845,
+      "rankValue": 0.008215,
       "display": "Cash / Geldmarkt",
       "leverage": 1
     }
@@ -94,20 +94,20 @@
       ],
       [
         "EMU Val",
-        0.204094,
-        -0.007654,
+        0.236146,
+        -0.006752,
         0.0
       ],
       [
         "Cash$",
-        0.045302,
-        0.005845,
+        0.054067,
+        0.008215,
         0.0
       ],
       [
         "UST 7-10",
-        -0.011576,
-        -0.008862,
+        -0.001361,
+        -0.006048,
         0.0
       ],
       [
@@ -124,8 +124,8 @@
       ],
       [
         "EM Small",
-        -0.389129,
-        -0.07848,
+        -0.389026,
+        -0.078477,
         0.0
       ]
     ],

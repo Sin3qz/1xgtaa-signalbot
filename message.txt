@@ -2,14 +2,15 @@
 •  40%  Rohstoffe (breit)
 •  60%  Cash (Fallback)
 Cooldown: 5 Handelstage gesperrt
+ℹ️ Kein neuer US-Handelstag seit 06.11. (Wochenende/Feiertag)
 
 Signale (1x-USD, Stand 06.11.):
 ```
 Asset     MoM SMA Ziel
 Rohstoff +48% +7%  40%
-EMU Val  +20% -1%    –
+EMU Val  +24% -1%    –
 Cash$     +5% +1%   ok
-UST 7-10  -1% -1%    –
+UST 7-10   0% -1%    –
 Gold     -22% -7%    –
 Nasdaq   -23% -3%    –
 EM Small -39% -8%    –
