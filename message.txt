@@ -2,12 +2,13 @@
 •  40%  Rohstoffe (breit)
 •  60%  Cash (Fallback)
 Cooldown: frei (Wechsel möglich)
+ℹ️ Kein neuer US-Handelstag seit 13.11. (Wochenende/Feiertag)
 
 Signale (1x-USD, Stand 13.11.):
 ```
 Asset     MoM SMA Ziel
 Rohstoff +30% +2%  40%
-EMU Val  +25% +2%   ok
+EMU Val  +26% +2%   ok
 Cash$     +7% +1%   ok
 UST 7-10  -7% -1%    –
 Nasdaq    -7% -5%    –
