@@ -2,15 +2,22 @@
   "strategy": "1xGTAA (defensiv, ungehebelt)",
   "name": "1xGTAA",
   "key": "1xgtaa",
-  "updated": "2026-11-17T00:44:53.305489+01:00",
+  "updated": "2026-11-18T03:18:48.719630+01:00",
   "rebalance": "cooldown",
   "rebalanceLabel": "Cooldown-Modell (taeglich, 10-Handelstage-Freeze)",
   "asOf": "2026-11-16",
-  "needsRetry": false,
+  "needsRetry": true,
   "refreshLater": false,
-  "dataWarnings": [],
-  "changedToday": true,
-  "changeType": "SWITCH",
+  "dataWarnings": [
+    "Cash$ (BIL): letzter Kurs 16.11.2026 (erwartet 17.11.2026)",
+    "EM Small (EEMS): letzter Kurs 16.11.2026 (erwartet 17.11.2026)",
+    "Gold (GLD): letzter Kurs 16.11.2026 (erwartet 17.11.2026)",
+    "Nasdaq (QQQ): letzter Kurs 16.11.2026 (erwartet 17.11.2026)",
+    "Rohstoff (DBC): letzter Kurs 16.11.2026 (erwartet 17.11.2026)",
+    "UST 7-10 (IEF): letzter Kurs 16.11.2026 (erwartet 17.11.2026)"
+  ],
+  "changedToday": false,
+  "changeType": null,
   "cooldown": 10,
   "late": false,
   "pendingTrade": null,
@@ -43,16 +50,16 @@
       "leverage": 1
     },
     "EM_SMALLCAP": {
-      "momentum": -0.283452,
+      "momentum": -0.283519,
       "trend": false,
-      "rankValue": -0.087323,
+      "rankValue": -0.087325,
       "display": "EM Small Caps",
       "leverage": 1
     },
     "EMU_VALUE": {
-      "momentum": 0.195622,
+      "momentum": 0.20515,
       "trend": true,
-      "rankValue": 0.019228,
+      "rankValue": 0.0195,
       "display": "EMU Value",
       "leverage": 1
     },
@@ -102,8 +109,8 @@
       ],
       [
         "EMU Val",
-        0.195622,
-        0.019228,
+        0.20515,
+        0.0195,
         0.6
       ],
       [
@@ -126,8 +133,8 @@
       ],
       [
         "EM Small",
-        -0.283452,
-        -0.087323,
+        -0.283519,
+        -0.087325,
         0.0
       ],
       [
@@ -753,34 +760,34 @@
   "freshness": {
     "NASDAQ100": {
       "last": "2026-11-16",
-      "fresh": true
+      "fresh": false
     },
     "EM_SMALLCAP": {
       "last": "2026-11-16",
-      "fresh": true
+      "fresh": false
     },
     "EMU_VALUE": {
-      "last": "2026-11-16",
+      "last": "2026-11-17",
       "fresh": true
     },
     "BONDS_7_10": {
       "last": "2026-11-16",
-      "fresh": true
+      "fresh": false
     },
     "GOLD": {
       "last": "2026-11-16",
-      "fresh": true
+      "fresh": false
     },
     "COMMODITIES": {
       "last": "2026-11-16",
-      "fresh": true
+      "fresh": false
     },
     "CASH_USD": {
       "last": "2026-11-16",
-      "fresh": true
+      "fresh": false
     },
     "EURUSD=X": {
-      "last": "2026-11-16",
+      "last": "2026-11-17",
       "fresh": true
     }
   },
