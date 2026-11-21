@@ -2,7 +2,7 @@
   "strategy": "1xGTAA (defensiv, ungehebelt)",
   "name": "1xGTAA",
   "key": "1xgtaa",
-  "updated": "2026-11-21T01:13:52.958292+01:00",
+  "updated": "2026-11-22T00:35:28.532992+01:00",
   "rebalance": "cooldown",
   "rebalanceLabel": "Cooldown-Modell (taeglich, 10-Handelstage-Freeze)",
   "asOf": "2026-11-20",
@@ -36,7 +36,7 @@
   ],
   "signals": {
     "NASDAQ100": {
-      "momentum": -0.405115,
+      "momentum": -0.405114,
       "trend": false,
       "rankValue": -0.067301,
       "display": "Nasdaq 100",
@@ -50,7 +50,7 @@
       "leverage": 1
     },
     "EMU_VALUE": {
-      "momentum": 0.006856,
+      "momentum": 0.006857,
       "trend": false,
       "rankValue": -0.000619,
       "display": "EMU Value",
@@ -108,7 +108,7 @@
       ],
       [
         "EMU Val",
-        0.006856,
+        0.006857,
         -0.000619,
         0.6
       ],
@@ -120,7 +120,7 @@
       ],
       [
         "Nasdaq",
-        -0.405115,
+        -0.405114,
         -0.067301,
         0.0
       ],

@@ -2,6 +2,7 @@
 •  60%  EMU Value
 •  40%  Rohstoffe (breit)
 Cooldown: 6 Handelstage gesperrt
+ℹ️ Kein neuer US-Handelstag seit 20.11. (Wochenende/Feiertag)
 
 Signale (1x-USD, Stand 20.11.):
 ```
