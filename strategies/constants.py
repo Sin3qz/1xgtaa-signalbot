@@ -2,13 +2,14 @@
 #  1xGTAA — defensiv, ungehebelt (7 Bausteine).  Cooldown-Modell (taegliche
 #  Entscheidung, 10-Handelstage-Freeze), Top-2 nach Momentum, 40/60-Tilt (P2-UEG).
 #  Cash-Fallback per Slot (Dual-Momentum): 40/0 o. 0/60, sonst Cash (strikt).
-#  Ab 01.12.2026: Trend SMA19 > SMA160, Momentum = Summe 1/3/6/9-Monats-Returns, Cooldown 10 (bis 30.11.2026:
-#  SMA8/150, 1/3/6/12; Stichtag in CFG['prev'], damit die Umstellung keine Umschichtung mitten im Monat ausloest).
+#  Ab 01.12.2026: Trend SMA19 > SMA160 (Momentum unveraendert 1/3/6/12, Cooldown 10; bis 30.11.2026:
+#  SMA8/150; Stichtag in CFG['prev'], damit die Umstellung keine Umschichtung mitten im Monat ausloest).
 #  Begruendung (Dashboard-Repo studien/STUDIE.md, Nachtrag 22.11.2026): gemeinsames Gitter 1995-2026 (kurz 3-40,
-#  lang 130-260, Cooldown 5-15, 4 Momentum-Saetze; EMU Value/EM Small Caps dort durch MSCI EMU/EM ersetzt) ist
-#  stark verrauscht (PBO 95 %, Cooldown verschiebt Handelstage); nach Glaettung (Cooldown 8-12, kurz +-3, lang +-20)
-#  ist 1/3/6/9 am besten und in allen Teilzeitraeumen ausgeglichen (n. s.); Plateau kurz 13-24 x lang 130-180 mit
-#  Gipfel bei 160 -> Mitte SMA19/160; Cooldown-Plateau 8-12 -> 10.
+#  lang 130-260, Cooldown 5-15, 4 Momentum-Saetze; EMU Value/EM Small Caps dort durch MSCI EMU/EM ersetzt). Geaendert
+#  wird nur, was in BEIDEN Zeithaelften (1995-2011, 2011-2026) besser ist: Umgebung SMA19/160 gegen 8/150 (1/3/6/12)
+#  Sharpe +0,037 / +0,035, MaxDD nicht schlechter; 19/160 liegt im Plateau von 1/3/6/12 und 1/3/6/9. 1/3/6/9 statt
+#  1/3/6/12 waere 1995-2011 beim MaxDD meist schlechter und widerspricht der Studie mit den echten Assets (28.10.)
+#  -> Momentum bleibt 1/3/6/12. Cooldown-Plateau 8-12 -> 10.
 #  Kein Look-Ahead.
 #  Verifiziert (v6-Engine, SMA8/150, 40/60, Slot-Cash-Fallback): CAGR 16.0 / Sortino 1.25 / MaxDD -18.2.
 #  Single Source of Truth (B4/B11): Anzeigen leiten sich aus diesen Werten ab.
@@ -44,7 +45,7 @@ ASSETS = {
                      isin="LU0321465469"),
 }
 CFG = dict(mode="gtaa", rebalance="cooldown", cooldown_days=10,
-           S=19, L=160, N=2, lookbacks=(1,3,6,9), trend_mode="smax",
+           S=19, L=160, N=2, lookbacks=(1,3,6,12), trend_mode="smax",
            weights=[0.4, 0.6], fallback="slotgate", try_count=3,     # 40/60, Cash-Fallback 40/0 o. 0/60
            prev=dict(until="2026-11-30", S=8, L=150, lookbacks=(1,3,6,12)))   # bis einschl. 30.11.2026 die alten Werte
 
