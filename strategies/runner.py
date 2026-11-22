@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 1xGTAA — LIVE-Runner. Strategie-Parameter und -Berechnung UNVERAENDERT (gtaa_botcore.py,
-constants.py: Top-2, SMA_S > SMA_L aus CFG (ab 22.11.2026: SMA12 > SMA175), Momentum aus CFG['lookbacks'], 40/60, Slot-Cash-Fallback, 10-Tage-Freeze).
+constants.py: Top-2, SMA_S > SMA_L aus CFG (ab 22.11.2026: SMA6 > SMA167), Momentum aus CFG['lookbacks'], 40/60, Slot-Cash-Fallback, 10-Tage-Freeze).
 
 Geaendert (29.09.2026):
   * ntfy nur bei tatsaechlichem Handel, Vergleich mit der zuletzt GEMELDETEN Allokation
