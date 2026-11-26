@@ -2,7 +2,7 @@
   "strategy": "1xGTAA (defensiv, ungehebelt)",
   "name": "1xGTAA",
   "key": "1xgtaa",
-  "updated": "2026-11-26T00:37:15.267336+01:00",
+  "updated": "2026-11-27T00:51:24.527538+01:00",
   "rebalance": "cooldown",
   "rebalanceLabel": "Cooldown-Modell (taeglich, 10-Handelstage-Freeze)",
   "asOf": "2026-11-25",
@@ -43,16 +43,16 @@
       "leverage": 1
     },
     "EM_SMALLCAP": {
-      "momentum": -0.458672,
+      "momentum": -0.458894,
       "trend": false,
-      "rankValue": -0.123094,
+      "rankValue": -0.123101,
       "display": "EM Small Caps",
       "leverage": 1
     },
     "EMU_VALUE": {
-      "momentum": -0.003275,
+      "momentum": -0.00862,
       "trend": false,
-      "rankValue": -0.024853,
+      "rankValue": -0.025004,
       "display": "EMU Value",
       "leverage": 1
     },
@@ -108,8 +108,8 @@
       ],
       [
         "EMU Val",
-        -0.003275,
-        -0.024853,
+        -0.00862,
+        -0.025004,
         0.6
       ],
       [
@@ -126,8 +126,8 @@
       ],
       [
         "EM Small",
-        -0.458672,
-        -0.123094,
+        -0.458894,
+        -0.123101,
         0.0
       ],
       [
@@ -760,7 +760,7 @@
       "fresh": true
     },
     "EMU_VALUE": {
-      "last": "2026-11-25",
+      "last": "2026-11-26",
       "fresh": true
     },
     "BONDS_7_10": {
@@ -780,7 +780,7 @@
       "fresh": true
     },
     "EURUSD=X": {
-      "last": "2026-11-25",
+      "last": "2026-11-26",
       "fresh": true
     }
   },
