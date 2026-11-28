@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 1xGTAA — LIVE-Runner. Strategie-Parameter und -Berechnung UNVERAENDERT (gtaa_botcore.py,
-constants.py: Top-2, SMA8 > SMA150, Momentum aus CFG['lookbacks'], 40/60, Slot-Cash-Fallback, 10-Tage-Freeze).
+constants.py: Top-2, SMA_S > SMA_L aus CFG (ab 01.12.2026: SMA15 > SMA160; bis 30.11. SMA8/150 – cfg_for), Momentum aus CFG['lookbacks'], 40/60, Slot-Cash-Fallback, 10-Tage-Freeze).
 
 Geaendert (29.09.2026):
   * ntfy nur bei tatsaechlichem Handel, Vergleich mit der zuletzt GEMELDETEN Allokation
@@ -18,7 +18,7 @@ import numpy as np
 import pandas as pd
 
 from . import common as U
-from .constants import (STRAT_NAME, STRAT_KEY, ASSETS, CFG, REBALANCE_LABEL, INFO_FOOTER, MIN_ROWS)
+from .constants import (STRAT_NAME, STRAT_KEY, ASSETS, CFG, REBALANCE_LABEL, INFO_FOOTER, MIN_ROWS, cfg_for)
 from . import gtaa_botcore as B
 
 STATUS_FILE = f"status_{STRAT_KEY}.json"
@@ -168,7 +168,8 @@ def _messages(c):
         L += [f"ℹ️ Kein neuer US-Handelstag seit {U.de_short(c['asof'])} (Wochenende/Feiertag)"]
     order, rows = _rows(c["alloc"], c["ind"], c["i"])
     tab = U.table(["Asset", "MoM", f"SMA", "Ziel"], rows, "lrrr")
-    legend = [f"MoM = Summe {'/'.join(map(str, CFG['lookbacks']))} M · SMA = SMA{CFG['S']}/SMA{CFG['L']}", "ok = qualifiziert, – = raus"]
+    _c = cfg_for(pd.Timestamp.today())
+    legend = [f"MoM = Summe {'/'.join(map(str, _c['lookbacks']))} M · SMA = SMA{_c['S']}/SMA{_c['L']}", "ok = qualifiziert, – = raus"]
     disc = L + ["", f"Signale (1x-USD, Stand {U.de_short(c['asof'])}):", "```"] + tab + ["```"] + legend
     ntfy = L + ["", f"Signale (Stand {U.de_short(c['asof'])}):"] + [f"{r[0]}: MoM {r[1]}, SMA {r[2]}, {r[3]}" for r in rows]
     tail = []
@@ -284,7 +285,7 @@ def run_strategy(closes=None, raw=None, write_files=True):
                         "rankValue": U.num(ind["rank_val"][a].iloc[i]), "display": ASSETS[a]["display"],
                         "leverage": ASSETS[a]["leverage"]} for a in ASSET_LIST},
         "table": {"head": ["Baustein", "MoM", "Trend", "Ziel"],
-                  "note": f"MoM = Summe der {'/'.join(map(str, CFG['lookbacks']))}-Monats-Renditen · Trend = SMA{CFG['S']}/SMA{CFG['L']} − 1 (qualifiziert, wenn > 0 und MoM > 0) · Top-2 40/60",
+                  "note": f"MoM = Summe der {'/'.join(map(str, cfg_for(pd.Timestamp.today())['lookbacks']))}-Monats-Renditen · Trend = SMA{cfg_for(pd.Timestamp.today())['S']}/SMA{cfg_for(pd.Timestamp.today())['L']} − 1 (qualifiziert, wenn > 0 und MoM > 0) · Top-2 40/60",
                   "rows": [[SHORT.get(a, a), U.num(ind["mom"][a].iloc[i]), U.num(ind["rank_val"][a].iloc[i]),
                             U.num(allocs[-1].get(a, 0.0), 4)] for a in order],
                   "kinds": ["text", "spct", "spct", "pct"]},

@@ -182,6 +182,14 @@ def compute_series(closes, cfg, live=False):
     live=True => letzter Tag kalender-genau (monthly_last), fuer den Live-Bot."""
     assets = list(closes.columns)
     ind = per_asset_indicators(closes, cfg["S"], cfg["L"], cfg["lookbacks"], cfg.get("trend_mode", "smax"))
+    prev = cfg.get("prev")                   # Parameter-Stichtag: bis prev["until"] die alten Werte, danach cfg
+    before = np.zeros(len(closes), bool)
+    if prev:
+        before = np.asarray(closes.index <= pd.Timestamp(prev["until"]))
+        old = per_asset_indicators(closes, prev["S"], prev["L"], prev["lookbacks"], cfg.get("trend_mode", "smax"))
+        for k, v in ind.items():
+            if isinstance(v, pd.DataFrame):               # Tage bis zum Stichtag: Indikatoren der alten Parameter
+                v = v.copy(); v.loc[before] = old[k].loc[before].values; ind[k] = v
     rebound = rebound_confirm(closes, cfg["rebound_months"]) if cfg["mode"] == "reverse" else None
     trend, mom, rankv = ind["trend"], ind["mom"], ind["rank_val"]
     idx = closes.index
@@ -192,11 +200,12 @@ def compute_series(closes, cfg, live=False):
         need = max(cfg["L"], max(MONTH_DAYS[m] for m in cfg["rebound_months"]))
     else:
         need = max(cfg["L"], max(MONTH_DAYS[m] for m in cfg["lookbacks"]))
+    need_old = max(prev["L"], max(MONTH_DAYS[m] for m in prev["lookbacks"])) if prev else need
 
     allocs, cds = [], []
     cur = {}; cooldown = 0
     for i in range(len(idx)):
-        warm_ok = i >= need
+        warm_ok = i >= (need_old if before[i] else need)
         if cfg["rebalance"] == "cooldown":
             if cooldown > 0:
                 cooldown -= 1
